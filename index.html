@@ -1,19 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>4zbv!</title>
-  <meta charset="UTF-8">
-  <style>
-    body {
-      font-family: sans-serif;
-      text-align: center;
-      padding: 50px;
-      background-color: #f4f4f4;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Overlay</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome CDN -->
+  <script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script> <!-- ใส่ Kit ID จริง -->
 </head>
-<body>
-  <h1>ควย 👋</h1>
-  <p>นี่คือเว็บไซต์แรกของผมบน GitHub Pages!</p>
+<body class="bg-black text-white overflow-hidden">
+
+  <!-- Background Image -->
+  <div class="relative h-screen w-screen">
+    <img src="your-background.jpg" alt="Background" class="absolute inset-0 w-full h-full object-cover opacity-30">
+    <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+
+    <!-- Centered Profile Card -->
+    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+      <!-- Avatar -->
+      <img src="avatar.png" alt="avatar" class="w-24 h-24 rounded-full mx-auto border-2 border-white shadow-lg">
+
+      <!-- Name & Status -->
+      <div class="mt-4">
+        <h1 class="text-xl font-semibold">4zbv <span class="text-purple-500">✔</span></h1>
+        <p class="text-sm text-gray-300">currently doing nothing 🌴</p>
+      </div>
+
+      <!-- Social Icons -->
+      <div class="mt-6 flex justify-center gap-6 text-2xl">
+        <a href="#" class="hover:text-gray-300"><i class="fab fa-steam"></i></a>
+        <a href="#" class="hover:text-gray-300"><i class="fab fa-tiktok"></i></a>
+        <a href="#" class="hover:text-gray-300"><i class="fab fa-discord"></i></a>
+        <a href="#" class="hover:text-gray-300"><i class="fab fa-github"></i></a>
+        <a href="#" class="hover:text-gray-300"><i class="fas fa-cube"></i></a> <!-- ใช้แทน Roblox -->
+      </div>
+
+      <!-- View Count -->
+      <div class="mt-6 text-gray-400 text-sm">👁 440</div>
+    </div>
+  </div>
+
 </body>
 </html>
